@@ -7,6 +7,10 @@
     @apply mx-auto w-[80%]
   }
 
+  * {
+    outline: none;
+  }
+
   .border-top-a {
     position: relative;
     height: 100%;
@@ -28,6 +32,13 @@
   .border-bla {
     border: 2px solid #A30041;
     color: #A30041;
+  }
+
+  .section_1 {
+    background-image: url(./pages/Rectangle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .border-bla-2 {

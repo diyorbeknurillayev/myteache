@@ -6,7 +6,7 @@ import { AiOutlineDown } from 'react-icons/ai'
 
 const Header = () => {
   return (
-    <header className='py-2 z-50 fixed w-full top-0'>
+    <header className='bg-white py-2 z-50 fixed w-full top-0'>
       <div className="container flex items-center justify-between">
         <Link to='/'><img className='w-[185px] h-[56px]' src={logo} alt="logo" /></Link>
 
@@ -29,7 +29,7 @@ const Header = () => {
             <MdOutlineLanguage className='text-[28px] text-[#a30041]' />
             <p className='text-[18px]'>O'zbekcha</p>
             <AiOutlineDown className='text-[21px] text-[#a30041]' />
-          </div>  
+          </div>
         </div>
       </div>
     </header>
