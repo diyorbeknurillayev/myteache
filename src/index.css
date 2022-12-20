@@ -4,6 +4,38 @@
 
 @layer components {
   .container {
-    @apply mx-auto
+    @apply mx-auto w-[80%]
+  }
+
+  .border-top-a {
+    position: relative;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .border-top-a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 0 0 4px 4px;
+    background-color: #A30041;
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+
+  .border-bla {
+    border: 2px solid #A30041;
+    color: #A30041;
+  }
+
+  .border-bla-2 {
+    border: 2px;
+    border-color: transparent;
+  }
+
+  .border-top-a:hover::before {
+    opacity: 1;
   }
 }
