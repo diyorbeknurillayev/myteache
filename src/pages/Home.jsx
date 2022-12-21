@@ -4,6 +4,7 @@ import { IoLanguageSharp } from 'react-icons/io5'
 import { FaDraftingCompass } from 'react-icons/fa'
 import { MdOutlineComputer } from 'react-icons/md'
 import { GiSecretBook } from 'react-icons/gi'
+import img_1 from '../components/img_1.png'
 
 const Home = () => {
   return (
@@ -61,6 +62,31 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="flex h-[65vh] items-center justify-center">
+        <div className="container">
+          <div className='w-full overflow-hidden rounded-[8px] flex items-center justify-center'>
+            <div className='space-y-8 text-white rounded-[8px] rounded-r-[0px] px-10 py-[64px] bg-[#A30041] w-[50%] h-[480px]'>
+              <h2 className='font-bold text-[48px]'>Darslar qay tarzda o'tiladi?</h2>
+              <p className='font-[400] text-[30px]'>Online va individual tarzda shaxsiy o‘qituvchi
+                bilan, uyda, ishxonada, va umuman o‘zingizga
+                qulay vaqtdava qulay joyda masofadan
+                o‘rganing.</p>
+            </div>
+            <div className='w-[50%] h-[480px] bg-[#a30041]'>
+              <img src={img_1} className='w-full h-full' alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='h-[100vh] flex items-center'>
+        <div className="container">
+          <h3 className='text-[45px] font-medium text-[#37363C] tracking-[2px]'>Bizning TOP o'qituvchilarimiz</h3>
+          <p className='font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
+            ustozlarni topadi va ushbu ro'yhatda ko'rsatadi. DarTslar individual tarzdao'tiladi, har bir dars 1 soatdan davom etadi.</p>
         </div>
       </section>
     </>
