@@ -85,8 +85,16 @@ const Home = () => {
       <section className='h-[100vh] flex items-center'>
         <div className="container">
           <h3 className='text-[45px] font-medium text-[#37363C] tracking-[2px]'>Bizning TOP o'qituvchilarimiz</h3>
-          <p className='font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
+          <p className='mb-6 font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
             ustozlarni topadi va ushbu ro'yhatda ko'rsatadi. DarTslar individual tarzdao'tiladi, har bir dars 1 soatdan davom etadi.</p>
+          
+          <div className='space-y-6'>
+            <div className='flex items-center justify-center space-x-6'>
+              <div className='w-[600px] h-[264px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
