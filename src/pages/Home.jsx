@@ -13,36 +13,6 @@ import users from './users.png'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  const Map = [
-    {
-      name: 'Diyorbek Nurullayev',
-      fan: 'Matematika',
-      soat: '42 000',
-      sharx: '20 ta',
-      student: '10 ta'
-    },
-    {
-      name: 'Davron Jorayev',
-      fan: 'IELTS',
-      soat: '50 000',
-      sharx: '11 ta',
-      student: '17 ta'
-    },
-    {
-      name: 'Sunnat Otkirov',
-      fan: 'Rus tili',
-      soat: '46 000',
-      sharx: '12 ta',
-      student: '30 ta'
-    },
-    {
-      name: '',
-      fan: 'Davron Jorayev',
-      soat: '42 000',
-      sharx: '20 ta',
-      student: '10 ta'
-    }
-  ]
 
   return (
     <>
@@ -125,20 +95,20 @@ const Home = () => {
           <p className='mb-6 font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
             ustozlarni topadi va ushbu ro'yhatda ko'rsatadi. DarTslar individual tarzdao'tiladi, har bir dars 1 soatdan davom etadi.</p>
 
-          <div className='space-y-8 space-x-8 row'>
-            {Map.map((v, i) => {
-              <div className='col-12 col-md-6 px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+          <div className='space-y-8'>
+            <div className='space-x-8 flex items-center justify-center w-full'>
+              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
                 <img src={avatar} alt="" />
                 <div className='space-y-2'>
-                  <h3 className='font-bold text-[#37363C] text-[25px]'>{v.name}</h3>
+                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
                   <div className='flex items-center'>
                     <img src={vector} alt="" />
-                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>Matematika</h4>
+                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
                   </div>
                   <div className='space-x-4 flex items-center'>
                     <div className='flex items-center'>
                       <img src={coins} alt="" />
-                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>45 000</span>/soat</p>
+                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
                     </div>
                     <div className='flex space-x-1 items-center'>
                       <img src={star} alt="" />
@@ -159,7 +129,105 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            })}
+              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+                <img src={avatar} alt="" />
+                <div className='space-y-2'>
+                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+                  <div className='flex items-center'>
+                    <img src={vector} alt="" />
+                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
+                  </div>
+                  <div className='space-x-4 flex items-center'>
+                    <div className='flex items-center'>
+                      <img src={coins} alt="" />
+                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
+                    </div>
+                    <div className='flex space-x-1 items-center'>
+                      <img src={star} alt="" />
+                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
+                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-1'>
+                    <img src={users} alt="" />
+                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                  </div>
+                  <p className='text-[16px] text-[#37363C]'>
+                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                  </p>
+                  <div className='mt-2'>
+                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='space-x-8 flex items-center justify-center w-full'>
+              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+                <img src={avatar} alt="" />
+                <div className='space-y-2'>
+                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+                  <div className='flex items-center'>
+                    <img src={vector} alt="" />
+                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
+                  </div>
+                  <div className='space-x-4 flex items-center'>
+                    <div className='flex items-center'>
+                      <img src={coins} alt="" />
+                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
+                    </div>
+                    <div className='flex space-x-1 items-center'>
+                      <img src={star} alt="" />
+                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
+                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-1'>
+                    <img src={users} alt="" />
+                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                  </div>
+                  <p className='text-[16px] text-[#37363C]'>
+                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                  </p>
+                  <div className='mt-2'>
+                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                  </div>
+                </div>
+              </div>
+              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+                <img src={avatar} alt="" />
+                <div className='space-y-2'>
+                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+                  <div className='flex items-center'>
+                    <img src={vector} alt="" />
+                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
+                  </div>
+                  <div className='space-x-4 flex items-center'>
+                    <div className='flex items-center'>
+                      <img src={coins} alt="" />
+                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
+                    </div>
+                    <div className='flex space-x-1 items-center'>
+                      <img src={star} alt="" />
+                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
+                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
+                    </div>
+                  </div>
+                  <div className='flex items-center space-x-1'>
+                    <img src={users} alt="" />
+                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                  </div>
+                  <p className='text-[16px] text-[#37363C]'>
+                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                  </p>
+                  <div className='mt-2'>
+                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -167,4 +235,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
