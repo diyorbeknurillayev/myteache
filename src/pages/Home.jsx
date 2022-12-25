@@ -11,6 +11,10 @@ import coins from './coins 1.png'
 import star from './star.png'
 import users from './users.png'
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination } from "swiper"
+import "swiper/css";
+import "swiper/css/pagination"
 
 const Home = () => {
 
@@ -95,7 +99,7 @@ const Home = () => {
           <p className='mb-6 font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
             ustozlarni topadi va ushbu ro'yhatda ko'rsatadi. DarTslar individual tarzdao'tiladi, har bir dars 1 soatdan davom etadi.</p>
 
-          <div className='space-y-8'>
+          <div className='space-y-8 row'>
             <div className='space-x-8 flex items-center justify-center w-full'>
               <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
                 <img src={avatar} alt="" />
@@ -229,6 +233,94 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className='section_3'>
+        <div className="container">
+          <h3 className='text-[45px] font-medium text-[#37363C] tracking-[2px]'>O'quvchilarimiz tomonidan yo'llangan fikrlar</h3>
+
+          <Swiper
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper mt-8"
+          >
+            <SwiperSlide className='space-x-7 flex items-center justify-between'>
+              <div className='cursor-default w-[48%] space-y-4 pl-5 pt-[15px] border border-[rgba(0, 0, 0, 0.1)] h-[200px] rounded-[4px]'>
+                <div className="flex items-center space-x-4">
+                  <img src={avatar} className='w-[70px] h-[70px] rounded-full' alt='' />
+                  <div className='text-[#37363c]'>
+                    <h3 className='text-[24px] font-bold'>Shukrullo</h3>
+                    <p className='font-medium text-[16px]'>My Teacher/Webclass o'quvchisi</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[#37363c] text-[17px]'>
+                  Assalomu alaykum.
+                  Hamma darslar tushunarli bo'lyapti.
+                  Manga
+                  ma'qul keldi. Ustozim ham hamma mavzuni tushunarli qilib yaxshi
+                  o'tib beryaptilar,
+                  Ancha o'zimda o'zgarish bo'ldi.
+                </p>
+              </div>
+              <div className='cursor-default w-[48%] space-y-4 pl-5 pt-[15px] border border-[rgba(0, 0, 0, 0.1)] h-[200px] rounded-[4px]'>
+                <div className="flex items-center space-x-4">
+                  <img src={avatar} className='w-[70px] h-[70px] rounded-full' alt='' />
+                  <div className='text-[#37363c]'>
+                    <h3 className='text-[24px] font-bold'>Diyorbek</h3>
+                    <p className='font-medium text-[16px]'>My Teacher/Webclass o'quvchisi</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[#37363c] text-[17px]'>
+                  Assalomu alaykum.
+                  Hamma darslar tushunarli bo'lyapti.
+                  Manga
+                  ma'qul keldi. Ustozim ham hamma mavzuni tushunarli qilib yaxshi
+                  o'tib beryaptilar,
+                  Ancha o'zimda o'zgarish bo'ldi.
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className='flex items-center justify-between space-x-7'>
+              <div className='cursor-default w-[48%] space-y-4 pl-5 pt-[15px] border border-[rgba(0, 0, 0, 0.1)] h-[200px] rounded-[4px]'>
+                <div className="flex items-center space-x-4">
+                  <img src={avatar} className='w-[70px] h-[70px] rounded-full' alt='' />
+                  <div className='text-[#37363c]'>
+                    <h3 className='text-[24px] font-bold'>Sardor</h3>
+                    <p className='font-medium text-[16px]'>My Teacher/Webclass o'quvchisi</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[#37363c] text-[17px]'>
+                  Assalomu alaykum.
+                  Hamma darslar tushunarli bo'lyapti.
+                  Manga
+                  ma'qul keldi. Ustozim ham hamma mavzuni tushunarli qilib yaxshi
+                  o'tib beryaptilar,
+                  Ancha o'zimda o'zgarish bo'ldi.
+                </p>
+              </div>
+              <div className='cursor-default w-[48%] space-y-4 pl-5 pt-[15px] border border-[rgba(0, 0, 0, 0.1)] h-[200px] rounded-[4px]'>
+                <div className="flex items-center space-x-4">
+                  <img src={avatar} className='w-[70px] h-[70px] rounded-full' alt='' />
+                  <div className='text-[#37363c]'>
+                    <h3 className='text-[24px] font-bold'>Davron</h3>
+                    <p className='font-medium text-[16px]'>My Teacher/Webclass o'quvchisi</p>
+                  </div>
+                </div>
+                <p className='font-normal text-[#37363c] text-[17px]'>
+                  Assalomu alaykum.
+                  Hamma darslar tushunarli bo'lyapti.
+                  Manga
+                  ma'qul keldi. Ustozim ham hamma mavzuni tushunarli qilib yaxshi
+                  o'tib beryaptilar,
+                  Ancha o'zimda o'zgarish bo'ldi.
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
     </>

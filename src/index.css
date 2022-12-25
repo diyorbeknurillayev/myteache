@@ -11,6 +11,17 @@
     outline: none;
   }
 
+  .swiper {
+    overflow-x: hidden !important;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 56px !important;
+  }
+
   .border-top-a {
     position: relative;
     height: 100%;
@@ -41,6 +52,11 @@
     background-repeat: no-repeat;
   }
 
+  .section_3 {
+    width: 100%;
+    height: 35vh;
+  }
+
   .border-bla-2 {
     border: 2px;
     border-color: transparent;
@@ -48,5 +64,9 @@
 
   .border-top-a:hover::before {
     opacity: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span {
+    cursor: default !important;
   }
 }
