@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from './Logo 1.png'
 import { MdOutlineLanguage } from 'react-icons/md'
 import { AiOutlineDown } from 'react-icons/ai'
 
 const Header = () => {
+
   return (
     <header className='bg-white py-2 z-50 fixed w-full top-0'>
       <div className="container flex items-center justify-between">
@@ -15,7 +16,7 @@ const Header = () => {
             <li className='mx-[18px] h-[72px] items-center flex'><Link className='text-[19px] flex items-center transition-all duration-[300ms] hover:text-[#A30041] border-top-a text-[#37363C] font-[500]' to='/'>Asosiy</Link></li>
             <li className='mx-[18px] h-[72px] items-center flex'><Link className='text-[19px] flex items-center transition-all duration-[300ms] hover:text-[#A30041] border-top-a text-[#37363C] font-[500]' to='/about'>Biz Haqimizda</Link></li>
             <li className='mx-[18px] h-[72px] items-center flex'><Link className='text-[19px] flex items-center transition-all duration-[300ms] hover:text-[#A30041] border-top-a text-[#37363C] font-[500]' to='/blog'>Blog</Link></li>
-            <li className='mx-[18px] h-[72px] items-center flex'><Link className='text-[19px] flex items-center transition-all duration-[300ms] hover:text-[#A30041] border-top-a text-[#37363C] font-[500]' to='/'>Fikrlar</Link></li>
+            <li className='mx-[18px] h-[72px] items-center flex'><Link className='text-[19px] flex items-center transition-all duration-[300ms] hover:text-[#A30041] border-top-a text-[#37363C] font-[500]' to='/comments'>Fikrlar</Link></li>
           </ul>
           <div className='flex items-center'>
             <Link to='/'>
