@@ -37,7 +37,7 @@ const Home = () => {
                   <p className='text-[15px]'>26 ta o'quvchi</p>
                 </div>
               </div>
-              <div className='w-[287px] cursor-pointer h-20 bg-white rounded-[4px] py-2 px-4 flex items-center text-[#a30041] hover:bg-[#a30041] hover:text-white transition-all duration-300'>
+              <div className='w-[287px] cursor-pointer h-20 bg-white rounded-[4px] py-2 px-4 flex items-center text-[#a30041] hover:bg-[#A30041] hover:text-white transition-all duration-300'>
                 <FaDraftingCompass className='text-[48px]' />
                 <div className='ml-[10px]'>
                   <h5 className='text-[17px] font-bold'>Aniq fanlar</h5>
