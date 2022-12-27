@@ -104,7 +104,7 @@ const Home = () => {
               <img src={avatar} className='w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto md:mx-0' alt="" />
               <div className='space-y-1'>
                 <div className="flex items-center justify-between">
-                  <h3 className='font-bold text-[#37363C] md:text-[26px] text-[20px]'>Diyorbek</h3>
+                  <h3 className='font-bold text-[#37363C] md:text-[26px] tex.0t-[20px]'>Diyorbek</h3>
                   <div className='flex items-center'>
                     <img src={vector} alt="" />
                     <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
