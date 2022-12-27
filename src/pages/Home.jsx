@@ -99,136 +99,140 @@ const Home = () => {
           <p className='mb-6 font-[400] text-[#37363c] text-[18px]'>Hoziroq o'zingizga ma'qul ustozni tanlang va o'rganishni boshlang.  MyTeacher sizga.O'zbekistonning barchaburchagidan eng kuchli va saralangan
             ustozlarni topadi va ushbu ro'yhatda ko'rsatadi. DarTslar individual tarzdao'tiladi, har bir dars 1 soatdan davom etadi.</p>
 
-          <div className='space-y-8 row'>
-            <div className='space-x-8 flex items-center justify-center w-full'>
-              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
-                <img src={avatar} alt="" />
-                <div className='space-y-2'>
-                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+          <div className='space-y-8 flex-row items-center justify-between flex'>
+            <div className='px-4 py-3 md:px-5 md:py-7 w-[600px] md:flex md:items-center md:justify-center space-x-5 h-max bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+              <img src={avatar} className='w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto md:mx-0' alt="" />
+              <div className='space-y-1'>
+                <div className="flex items-center justify-between">
+                  <h3 className='font-bold text-[#37363C] md:text-[26px] text-[20px]'>Diyorbek</h3>
                   <div className='flex items-center'>
                     <img src={vector} alt="" />
                     <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
-                  </div>
-                  <div className='space-x-4 flex items-center'>
-                    <div className='flex items-center'>
-                      <img src={coins} alt="" />
-                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
-                    </div>
-                    <div className='flex space-x-1 items-center'>
-                      <img src={star} alt="" />
-                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
-                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
-                    </div>
-                  </div>
-                  <div className='flex items-center space-x-1'>
-                    <img src={users} alt="" />
-                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
-                  </div>
-                  <p className='text-[16px] text-[#37363C]'>
-                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
-                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
-                  </p>
-                  <div className='mt-2'>
-                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
                   </div>
                 </div>
-              </div>
-              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
-                <img src={avatar} alt="" />
-                <div className='space-y-2'>
-                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+                <div className='space-x-3 flex items-center'>
                   <div className='flex items-center'>
-                    <img src={vector} alt="" />
-                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
+                    <img src={coins} className='w-[20px] h-[20px] md:w-[24px] md:h-[24px]' alt="" />
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#A30041] font-medium text-[18px]'>50 000</span>/soat</p>
                   </div>
-                  <div className='space-x-4 flex items-center'>
-                    <div className='flex items-center'>
-                      <img src={coins} alt="" />
-                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
-                    </div>
-                    <div className='flex space-x-1 items-center'>
-                      <img src={star} alt="" />
-                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
-                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
-                    </div>
+                  <div className='flex space-x-1 items-center'>
+                    <img src={star} className='w-[18px] h-[18px] md:w-[22px] md:h-[22px]' alt="" />
+                    <p className='font-medium text-[18px] text-[#A30041]'>5</p>
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
                   </div>
-                  <div className='flex items-center space-x-1'>
-                    <img src={users} alt="" />
-                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
-                  </div>
-                  <p className='text-[16px] text-[#37363C]'>
-                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
-                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
-                  </p>
-                  <div className='mt-2'>
-                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
-                  </div>
+                </div>
+                <div className='flex items-center space-x-1'>
+                  <img src={users} className='md:w-6 md:h-6 w-5 h-5' alt="" />
+                  <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                </div>
+                <p className='text-[16px] text-[#37363C]'>
+                  Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                  Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                </p>
+                <div className='mt-2'>
+                  <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
                 </div>
               </div>
             </div>
-            <div className='space-x-8 flex items-center justify-center w-full'>
-              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
-                <img src={avatar} alt="" />
-                <div className='space-y-2'>
-                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+            <div className='px-4 py-3 md:px-5 md:py-7 w-[600px] md:flex md:items-center md:justify-center space-x-5 h-max bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+              <img src={avatar} className='w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto md:mx-0' alt="" />
+              <div className='space-y-1'>
+                <div className="flex items-center justify-between">
+                  <h3 className='font-bold text-[#37363C] text-[20px]'>Diyorbek</h3>
                   <div className='flex items-center'>
                     <img src={vector} alt="" />
                     <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
-                  </div>
-                  <div className='space-x-4 flex items-center'>
-                    <div className='flex items-center'>
-                      <img src={coins} alt="" />
-                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
-                    </div>
-                    <div className='flex space-x-1 items-center'>
-                      <img src={star} alt="" />
-                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
-                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
-                    </div>
-                  </div>
-                  <div className='flex items-center space-x-1'>
-                    <img src={users} alt="" />
-                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
-                  </div>
-                  <p className='text-[16px] text-[#37363C]'>
-                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
-                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
-                  </p>
-                  <div className='mt-2'>
-                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
                   </div>
                 </div>
+                <div className='space-x-3 flex items-center'>
+                  <div className='flex items-center'>
+                    <img src={coins} className='w-[20px] h-[20px] md:w-[24px] md:h-[24px]' alt="" />
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#A30041] font-medium text-[18px]'>50 000</span>/soat</p>
+                  </div>
+                  <div className='flex space-x-1 items-center'>
+                    <img src={star} className='w-[18px] h-[18px] md:w-[22px] md:h-[22px]' alt="" />
+                    <p className='font-medium text-[18px] text-[#A30041]'>5</p>
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
+                  </div>
+                </div>
+                <div className='flex items-center space-x-1'>
+                  <img src={users} className='md:w-6 md:h-6 w-5 h-5' alt="" />
+                  <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                </div>
+                <p className='text-[16px] text-[#37363C]'>
+                  Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                  Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                </p>
+                <div className='mt-2'>
+                  <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                </div>
               </div>
-              <div className='px-5 py-7 w-[49%] flex items-center justify-center space-x-5 h-[280px] bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
-                <img src={avatar} alt="" />
-                <div className='space-y-2'>
-                  <h3 className='font-bold text-[#37363C] text-[25px]'>Diyorbek Nurullayev</h3>
+            </div>
+            <div className='px-4 py-3 md:px-5 md:py-7 w-[49%] md:flex md:items-center md:justify-center space-x-5 h-max bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+              <img src={avatar} className='w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto md:mx-0' alt="" />
+              <div className='space-y-1'>
+                <div className="flex items-center justify-between">
+                  <h3 className='font-bold text-[#37363C] text-[20px]'>Diyorbek</h3>
                   <div className='flex items-center'>
                     <img src={vector} alt="" />
                     <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
                   </div>
-                  <div className='space-x-4 flex items-center'>
-                    <div className='flex items-center'>
-                      <img src={coins} alt="" />
-                      <p className='text-[#37363C] text-[20px]'><span className='text-[#A30041] font-medium text-[24px]'>50 000</span>/soat</p>
-                    </div>
-                    <div className='flex space-x-1 items-center'>
-                      <img src={star} alt="" />
-                      <p className='font-medium text-[24px] text-[#A30041]'>5</p>
-                      <p className='text-[#37363C] text-[16px] mt-[5.5px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
-                    </div>
+                </div>
+                <div className='space-x-3 flex items-center'>
+                  <div className='flex items-center'>
+                    <img src={coins} className='w-[20px] h-[20px] md:w-[24px] md:h-[24px]' alt="" />
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#A30041] font-medium text-[18px]'>50 000</span>/soat</p>
                   </div>
-                  <div className='flex items-center space-x-1'>
-                    <img src={users} alt="" />
-                    <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                  <div className='flex space-x-1 items-center'>
+                    <img src={star} className='w-[18px] h-[18px] md:w-[22px] md:h-[22px]' alt="" />
+                    <p className='font-medium text-[18px] text-[#A30041]'>5</p>
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
                   </div>
-                  <p className='text-[16px] text-[#37363C]'>
-                    Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
-                    Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
-                  </p>
-                  <div className='mt-2'>
-                    <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                </div>
+                <div className='flex items-center space-x-1'>
+                  <img src={users} className='md:w-6 md:h-6 w-5 h-5' alt="" />
+                  <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                </div>
+                <p className='text-[16px] text-[#37363C]'>
+                  Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                  Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                </p>
+                <div className='mt-2'>
+                  <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
+                </div>
+              </div>
+            </div>
+            <div className='px-4 py-3 md:px-5 md:py-7 w-[49%] md:flex md:items-center md:justify-center space-x-5 h-max bg-[#F5F5F7] rounded-[8px] border border-[rgba(55, 54, 60, 0.1)]'>
+              <img src={avatar} className='w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto md:mx-0' alt="" />
+              <div className='space-y-1'>
+                <div className="flex items-center justify-between">
+                  <h3 className='font-bold text-[#37363C] text-[20px]'>Diyorbek</h3>
+                  <div className='flex items-center'>
+                    <img src={vector} alt="" />
+                    <h4 className='ml-1 font-medium text-[#37363C] text-[17px]'>IELTS</h4>
                   </div>
+                </div>
+                <div className='space-x-3 flex items-center'>
+                  <div className='flex items-center'>
+                    <img src={coins} className='w-[20px] h-[20px] md:w-[24px] md:h-[24px]' alt="" />
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#A30041] font-medium text-[18px]'>50 000</span>/soat</p>
+                  </div>
+                  <div className='flex space-x-1 items-center'>
+                    <img src={star} className='w-[18px] h-[18px] md:w-[22px] md:h-[22px]' alt="" />
+                    <p className='font-medium text-[18px] text-[#A30041]'>5</p>
+                    <p className='text-[#37363C] text-[16px]'><span className='text-[#0DAD13]'>16 ta</span> sharx</p>
+                  </div>
+                </div>
+                <div className='flex items-center space-x-1'>
+                  <img src={users} className='md:w-6 md:h-6 w-5 h-5' alt="" />
+                  <p className='text-[#37363C] mt-[6px] tetx-[16px]'><span className='text-[#0DAD13]'>12 ta</span> talaba</p>
+                </div>
+                <p className='text-[16px] text-[#37363C]'>
+                  Tajriba: <span className='text-[#0DAD13]'>1 yil</span>,   Daraja: <span className='text-[#0DAD13]'>C1</span>,   Sertifikat: <span className='text-[#0DAD13]'>IELTS-6.5</span>,
+                  Qaysi tillarni biladi: <span className='text-[#0DAD13]'>Rus tili, Ingliz tili, Tojik tili.</span>
+                </p>
+                <div className='mt-2'>
+                  <Link href='/' className='text-[18px] text-[#0DAD13]'>Batafsil</Link>
                 </div>
               </div>
             </div>

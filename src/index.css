@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto w-[80%]
+    @apply mx-auto w-[90%] md:w-[85%] lg:w-[w-80%]
   }
 
   * {
@@ -13,6 +13,29 @@
 
   .swiper {
     overflow-x: hidden !important;
+  }
+
+  .bla_2 {
+    position: relative;
+  }
+
+  .bla_2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+
+  .div-header {
+    transform: translatex(-400px);
+  }
+
+  .header-div {
+    transform: translateX(0px);
   }
 
   .swiper-horizontal>.swiper-pagination-bullets,
